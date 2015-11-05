@@ -26,7 +26,8 @@ end
 
   def update
     if @job.update(jobs_params)
-      redirect_to @jobelse
+      redirect_to @job
+    else
       render "Edit"
     end
   end
